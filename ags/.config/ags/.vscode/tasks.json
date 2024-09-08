@@ -1,0 +1,55 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "TypeScript",
+            "icon": {
+                "id": "wrench"
+            },
+            "type": "shell",
+            "command": "tsc --watch",
+            "problemMatcher": [
+                "$tsc"
+            ],
+            "runOptions": {
+                "runOn": "folderOpen"
+            }
+        },
+        {
+            "label": "Sass",
+            "icon": {
+                "id": "wrench"
+            },
+            "type": "shell",
+            "command": "sass --watch ${workspaceFolder}",
+            "problemMatcher": [
+                "$node-sass"
+            ],
+            "runOptions": {
+                "runOn": "folderOpen"
+            }
+        },
+        {
+            "label": "Ags",
+            "icon": {
+                "id": "coffee"
+            },
+            "type": "shell",
+            "command": "while true; sleep 1; ags -q; ags &; inotifywait -q -e modify -r /home/dh/.config/ags; end",
+            "runOptions": {
+                "runOn": "folderOpen"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "kill waybar",
+            "icon": {"id": "stop"},
+            "type": "shell",
+            "command": "killall waybar",
+            "problemMatcher": [],
+            "runOptions": {
+                "runOn": "folderOpen"
+            }
+        }
+    ]
+}

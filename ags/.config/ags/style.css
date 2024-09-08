@@ -1,0 +1,62 @@
+.workspaces {
+  padding: 4px;
+  background-color: gray;
+  border-radius: 16px;
+}
+
+.workspace {
+  transition: min-width 250ms ease, min-height 250ms ease, background-color 250ms ease;
+  font-size: 0;
+  min-width: 16px;
+  min-height: 16px;
+  border-radius: 16px;
+}
+
+button:hover > .workspace {
+  background-color: pink;
+}
+
+.active {
+  background-color: aqua;
+  min-width: 32px;
+}
+
+.occupied {
+  background-color: white;
+}
+
+.empty {
+  background-color: lightgray;
+}
+
+.panel {
+  background-color: black;
+  color: white;
+}
+
+.panel > .bar {
+  padding-bottom: 8px;
+}
+
+.corners {
+  box-shadow: 0 0 0 16px black;
+  border-radius: 16px;
+}
+
+* {
+  all: unset;
+}
+
+.bg-red {
+  background-color: red;
+}
+
+.bg-blue {
+  background-color: blue;
+}
+
+.bg-green {
+  background-color: green;
+}
+
+/*# sourceMappingURL=style.css.map */

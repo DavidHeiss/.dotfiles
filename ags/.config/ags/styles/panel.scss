@@ -1,0 +1,10 @@
+@use "panel/workspaces.scss";
+
+.panel {
+  background-color: black;
+  color: white;
+}
+
+.panel > .bar {
+  padding-bottom: 8px;
+}
